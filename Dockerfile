@@ -2,7 +2,7 @@
 
 # Base OS - Centos
 
-FROM FROM registry.access.redhat.com/ubi8/ubi:latest
+FROM centos:latest
 
 # Install Httpd Package
 RUN dnf update -y
