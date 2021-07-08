@@ -5,10 +5,10 @@
 FROM centos:latest
 
 # Install Httpd Package
-RUN dnf update -y
-RUN dnf upgrade -y
-RUN dnf install epel-release -y
-RUN dnf install httpd -y
+RUN yum update -y
+RUN yum upgrade -y
+RUN yum install epel-release -y
+RUN yum install httpd -y
 
 # WORKINGDIR /var/www/html
 WORKDIR /var/www/html/
